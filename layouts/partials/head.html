@@ -2,8 +2,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="{{ .Description }}" />
 {{ block "meta" . }} {{ end }}
+
 <!-- Primary Meta Tags -->
+{{ block "title" . }} 
 <title>{{ .Title }} - {{ .Site.Title }}</title>
+{{ end }}
 
 <!-- Favicon -->
 {{ with resources.Get "img/brand/brand.svg" }}
