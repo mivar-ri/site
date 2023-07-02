@@ -1,4 +1,4 @@
-{{ define "hero" }} {{ partial "hero-main.html" . }} {{ end }}
+{{ define "hero" }} {{ partial "hero-single.html" . }} {{ end }}
 
 {{ define "title" }} 404 - Page Not Found &ndash; {{ .Site.Title }} {{ end }}
 
@@ -12,10 +12,16 @@
 <section class="section section-sm">
     <article class="container">
         <section class="flow">
-            <h1>Page Not Found</h1>
-            {{ with resources.Get "img/robots-404.jpg" }}
-            <img src="{{ .RelPermalink }}" class="rounded mx-auto d-block">
-            {{ end }}
+            <div class="widget widget-paragraph widget-align-justify widget-size-100 ">
+                <h1>Page Not Found</h1>
+            </div>
+            <div class="widget widget-paragraph widget-align-center widget-size-100 ">
+                <figure class="figure">
+                    {{ with resources.Get "img/robots-404.jpg" }}
+                    <img src="{{ .RelPermalink }}" class="rounded mx-auto d-block">
+                    {{ end }}
+                </figure>
+            </div>
         </section>
     </article>
 </section>
