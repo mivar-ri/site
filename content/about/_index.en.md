@@ -1,4 +1,4 @@
 ---
-title: "О нас"
-description:  'О НИИ "Мивар".'
+title: "About us"
+description:  'About the Mivar Research Institute.'
 ---
