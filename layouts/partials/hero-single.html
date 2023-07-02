@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="row justify-content-center d-flex align-items-center" style="height: 15rem">
+        <div class="col-12 col-lg-10 text-center">
+            <h1>{{ or .Params.header .Title }} </h1>
+            {{ if isset .Params "subheader" }}
+            <p class="lead mb-0">{{ .Params.subheader }}</p>
+            {{ end }}
+        </div>
+    </div>
+</div>

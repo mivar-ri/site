@@ -1,0 +1,4 @@
+{{ $class := default "blockquote" (.Get `class`) }}
+<blockquote class="{{ $class }}">
+    {{.Inner}}
+</blockquote>

@@ -1,0 +1,34 @@
+{{ define "hero" }} {{ partial "hero-single.html" . }} {{ end }}
+
+{{ define "title" }} {{ .Title }} &ndash; {{ .Site.Title }} {{ end }}
+
+{{ define "bottom-scripts" }}
+<script type="text/javascript">
+    particlesJS.load("header-page-particles-js", "/js/particles/particles.json");
+</script>
+{{ end }}
+
+{{ define "main" }}
+<section class="section section-sm">
+    <div class="container">
+        <section class="flow">
+            {{ $page := .Page }}
+            {{ range .Pages }}
+            <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                <div class="card shadow mb-4">
+                    <div class="card-body">
+                        {{ if isset .Params "logo" }}
+                        {{ $image := .Params.logo | resources.Get }}
+                        <img src="{{ $image.RelPermalink }}" class="card-img-top rounded-top" alt="Themesberg office">
+                        {{ end }}
+                        <h3 class="h5 card-title mt-3">{{ .Title }}</h3>
+                        <p class="card-text">{{ or .Summary .Description }}</p><a href="{{ .Permalink }}"
+                            class="btn btn-primary btn-sm">{{ $page.Params.learnmore }}</a>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </section>
+    </div>
+</section>
+{{ end }}

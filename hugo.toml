@@ -1,0 +1,444 @@
+baseURL = 'https://mivar.org/'
+defaultContentLanguage = 'ru'
+defaultContentLanguageInSubdir = true
+assetDir = 'static'
+enableRobotsTXT = true
+
+[sitemap]
+changefreq = 'weekly'
+filename = 'sitemap.xml'
+priority = 0.5
+
+[params]
+yandextracking = 94178734
+
+[languages]
+[languages.ru]
+languageCode = 'ru-ru'
+languagedirection = 'ru'
+languageName = "Русский"
+title = 'НИИ "МИВАР"'
+[languages.ru.params]
+logo = '/img/brand/mivar-ru.svg'
+copyright = 'Авторское право © НИИ "Мивар". Все права защищены.'
+cookies = 'https://mivar.org/ru/about/cookies/'
+[languages.ru.menu]
+[[languages.ru.menu.main]]
+identifier = 'technologies'
+name = 'Технологии'
+weight = 1
+[[languages.ru.menu.main]]
+identifier = 'mivars-from-a-to-z'
+name = 'Мивары от А до Я'
+parent = 'technologies'
+url = '/ru/technologies/mivars-from-a-to-z'
+weight = 1
+[[languages.ru.menu.main]]
+identifier = 'mivar-intelligent-systems'
+name = 'Миварные интеллектуальные системы'
+parent = 'technologies'
+url = '/ru/technologies/mivar-intelligent-systems'
+weight = 2
+[[languages.ru.menu.main]]
+identifier = 'activities'
+name = 'Направления'
+weight = 2
+[[languages.ru.menu.main]]
+identifier = 'expert-systems'
+name = 'Экспертные системы нового поколения'
+parent = 'activities'
+url = '/ru/activities/expert-systems'
+weight = 1
+[[languages.ru.menu.main]]
+identifier = 'texts'
+name = 'Семантический анализ и обработка текста'
+parent = 'activities'
+url = '/ru/activities/texts'
+weight = 2
+[[languages.ru.menu.main]]
+identifier = 'robots'
+name = 'Системы управления автономными роботами'
+parent = 'activities'
+url = '/ru/activities/robots'
+weight = 3
+[[languages.ru.menu.main]]
+identifier = 'images'
+name = 'Интеллектуальное распознавание образов'
+parent = 'activities'
+url = '/ru/activities/images'
+weight = 4
+[[languages.ru.menu.main]]
+identifier = 'examples'
+name = 'Примеры'
+weight = 3
+[[languages.ru.menu.main]]
+identifier = 'automatic-reply'
+name = 'Автоматический ответ на запросы'
+parent = 'examples'
+url = '/ru/examples/automatic-reply'
+weight = 1
+[[languages.ru.menu.main]]
+identifier = 'generating-an-algorithm-of-user-actions'
+name = 'Генерация алгоритма действий пользователя'
+parent = 'examples'
+url = '/ru/examples/generating-an-algorithm-of-user-actions'
+weight = 2
+[[languages.ru.menu.main]]
+identifier = 'document-mining-system'
+name = 'Система интеллектуального анализа документов'
+parent = 'examples'
+url = '/ru/examples/document-mining-system'
+weight = 3
+[[languages.ru.menu.main]]
+identifier = 'plan-generation-system'
+name = 'Система генерации планов'
+parent = 'examples'
+url = '/ru/examples/plan-generation-system'
+weight = 4
+[[languages.ru.menu.main]]
+identifier = 'services'
+name = 'Услуги'
+weight = 4
+[[languages.ru.menu.main]]
+identifier = 'projects'
+name = 'Витрина проектов'
+parent = 'services'
+url = '/ru/projects'
+weight = 1
+[[languages.ru.menu.main]]
+identifier = 'business-proposal'
+name = 'Деловое предложение'
+parent = 'services'
+url = '/ru/services/business-proposal'
+weight = 2
+[[languages.ru.menu.main]]
+identifier = 'about'
+name = 'О нас'
+weight = 5
+[[languages.ru.menu.main]]
+identifier = 'mission'
+name = 'Миссия'
+parent = 'about'
+url = '/ru/about/mission'
+weight = 1
+[[languages.ru.menu.main]]
+identifier = 'contacts'
+name = 'Контакты'
+parent = 'about'
+url = '/ru/about/contacts'
+weight = 2
+[[languages.ru.menu.social]]
+identifier = 'social'
+name = 'Социальные сети'
+weight = 1
+[[languages.ru.menu.social]]
+identifier = 'vk'
+parent = 'social'
+name = 'VK'
+weight = 1
+url = 'https://vk.com/mivarllc'
+[languages.ru.menu.social.params]
+class = 'fab fa-vk'
+help = 'Следите за нами в "ВКонтакте"'
+[[languages.ru.menu.social]]
+identifier = 'youtube'
+parent = 'social'
+name = 'YouTube'
+weight = 2
+url = 'https://www.youtube.com/channel/UC2V2UWUrgo1-o3TvjWZex-w'
+[languages.ru.menu.social.params]
+class = 'fab fa-youtube'
+help = 'Следите за нами в "YouTube"'
+[[languages.ru.menu.social]]
+identifier = 'twitter'
+parent = 'social'
+name = 'Twitter'
+weight = 3
+url = 'https://twitter.com/MivarLLC'
+[languages.ru.menu.social.params]
+class = 'fab fa-twitter'
+help = 'Следите за нами в "Twitter"'
+[[languages.ru.menu.activities]]
+identifier = 'activities'
+name = 'Направления деятельности'
+weight = 1
+[[languages.ru.menu.activities]]
+identifier = 'expert-systems'
+name = 'Экспертные системы нового поколения'
+parent = 'activities'
+url = '/ru/activities/expert-systems'
+weight = 1
+[[languages.ru.menu.activities]]
+identifier = 'texts'
+name = 'Семантический анализ и обработка текста'
+parent = 'activities'
+url = '/ru/activities/texts'
+weight = 2
+[[languages.ru.menu.activities]]
+identifier = 'robots'
+name = 'Системы управления автономными роботами'
+parent = 'activities'
+url = '/ru/activities/robots'
+weight = 3
+[[languages.ru.menu.activities]]
+identifier = 'images'
+name = 'Интеллектуальное распознавание образов'
+parent = 'activities'
+url = '/ru/activities/images'
+weight = 4
+[[languages.ru.menu.about]]
+identifier = 'about'
+name = 'О нас'
+weight = 1
+[[languages.ru.menu.about]]
+identifier = 'mission'
+name = 'Миссия'
+parent = 'about'
+url = '/ru/about/mission'
+weight = 1
+[[languages.ru.menu.about]]
+identifier = 'mivar-intelligent-systems'
+name = 'Наш подход'
+parent = 'about'
+url = '/ru/technologies/mivar-intelligent-systems'
+weight = 2
+[[languages.ru.menu.about]]
+identifier = 'business-proposal'
+name = 'Услуги'
+parent = 'about'
+url = '/ru/services/business-proposal'
+weight = 3
+[[languages.ru.menu.about]]
+identifier = 'cookies'
+name = 'Cookies'
+parent = 'about'
+url = '/ru/about/cookies'
+weight = 4
+[[languages.ru.menu.contacts]]
+identifier = 'contacts'
+name = 'Контакты'
+weight = 1
+[[languages.ru.menu.contacts]]
+identifier = 'info'
+name = 'Вопросы по взаимодействию'
+parent = 'contacts'
+url = 'info@mivar.org'
+weight = 1
+[[languages.ru.menu.contacts]]
+identifier = 'science'
+name = 'Вопросы по научным разработкам'
+parent = 'contacts'
+url = 'science@mivar.org'
+weight = 2
+
+[languages.en]
+languageCode = 'en-us'
+languagedirection = 'en'
+languageName = "English"
+title = 'RI "MIVAR"'
+[languages.en.params]
+logo = '/img/brand/mivar-en.svg'
+copyright = 'Copyright © RI "Mivar". All rights reserved.'
+cookies = 'https://mivar.org/en/about/cookies/'
+[languages.en.menu]
+[[languages.en.menu.main]]
+identifier = 'technologies'
+name = 'Technologies'
+weight = 1
+[[languages.en.menu.main]]
+identifier = 'mivar-intelligent-systems'
+name = 'Mivar intelligent systems'
+parent = 'technologies'
+url = '/en/technologies/mivar-intelligent-systems'
+weight = 1
+[[languages.en.menu.main]]
+identifier = 'activities'
+name = 'Activities'
+weight = 2
+[[languages.en.menu.main]]
+identifier = 'expert-systems'
+name = 'Next generation expert systems'
+parent = 'activities'
+url = '/en/activities/expert-systems'
+weight = 1
+[[languages.en.menu.main]]
+identifier = 'texts'
+name = 'Semantic analysis and text processing'
+parent = 'activities'
+url = '/en/activities/texts'
+weight = 2
+[[languages.en.menu.main]]
+identifier = 'robots'
+name = 'Intelligent robot management'
+parent = 'activities'
+url = '/en/activities/robots'
+weight = 3
+[[languages.en.menu.main]]
+identifier = 'images'
+name = 'Intelligent image recognition'
+parent = 'activities'
+url = '/en/activities/images'
+weight = 4
+[[languages.en.menu.main]]
+identifier = 'examples'
+name = 'Examples'
+weight = 3
+[[languages.en.menu.main]]
+identifier = 'automatic-reply'
+name = 'Automatic response to typical user requests'
+parent = 'examples'
+url = '/en/examples/automatic-reply'
+weight = 1
+[[languages.en.menu.main]]
+identifier = 'generating-an-algorithm-of-user-actions'
+name = 'Generating a user action algorithm'
+parent = 'examples'
+url = '/en/examples/generating-an-algorithm-of-user-actions'
+weight = 2
+[[languages.en.menu.main]]
+identifier = 'document-mining-system'
+name = 'Document mining system'
+parent = 'examples'
+url = '/en/examples/document-mining-system'
+weight = 3
+[[languages.en.menu.main]]
+identifier = 'plan-generation-system'
+name = 'Plan generation system'
+parent = 'examples'
+url = '/en/examples/plan-generation-system'
+weight = 4
+[[languages.en.menu.main]]
+identifier = 'services'
+name = 'Services'
+weight = 4
+[[languages.en.menu.main]]
+identifier = 'projects'
+name = 'Project showcase'
+parent = 'services'
+url = '/en/projects'
+weight = 1
+[[languages.en.menu.main]]
+identifier = 'business-proposal'
+name = 'Business proposal'
+parent = 'services'
+url = '/en/services/business-proposal'
+weight = 2
+[[languages.en.menu.main]]
+identifier = 'about'
+name = 'About us'
+weight = 5
+[[languages.en.menu.main]]
+identifier = 'mission'
+name = 'Mission'
+parent = 'about'
+url = '/en/about/mission'
+weight = 1
+[[languages.en.menu.main]]
+identifier = 'contacts'
+name = 'Contacts'
+parent = 'about'
+url = '/en/about/contacts'
+weight = 2
+[[languages.en.menu.social]]
+identifier = 'social'
+name = 'Social networks'
+weight = 1
+[[languages.en.menu.social]]
+identifier = 'vk'
+parent = 'social'
+name = 'VK'
+weight = 1
+url = 'https://vk.com/mivarllc'
+[languages.en.menu.social.params]
+class = 'fab fa-vk'
+help = 'Follow us on VK'
+[[languages.en.menu.social]]
+identifier = 'youtube'
+parent = 'social'
+name = 'YouTube'
+weight = 2
+url = 'https://www.youtube.com/channel/UC2V2UWUrgo1-o3TvjWZex-w'
+[languages.en.menu.social.params]
+class = 'fab fa-youtube'
+help = 'Follow us on YouTube'
+[[languages.en.menu.social]]
+identifier = 'twitter'
+parent = 'social'
+name = 'Twitter'
+weight = 3
+url = 'https://twitter.com/MivarLLC'
+[languages.en.menu.social.params]
+class = 'fab fa-twitter'
+help = 'Follow us on Twitter'
+[[languages.en.menu.activities]]
+identifier = 'activities'
+name = 'Activities'
+weight = 1
+[[languages.en.menu.activities]]
+identifier = 'expert-systems'
+name = 'Next generation expert systems'
+parent = 'activities'
+url = '/en/activities/expert-systems'
+weight = 1
+[[languages.en.menu.activities]]
+identifier = 'texts'
+name = 'Semantic analysis and text processing'
+parent = 'activities'
+url = '/en/activities/texts'
+weight = 2
+[[languages.en.menu.activities]]
+identifier = 'robots'
+name = 'Intelligent robot management'
+parent = 'activities'
+url = '/en/activities/robots'
+weight = 3
+[[languages.en.menu.activities]]
+identifier = 'images'
+name = 'Intelligent image recognition'
+parent = 'activities'
+url = '/en/activities/images'
+weight = 4
+[[languages.en.menu.about]]
+identifier = 'about'
+name = 'About us'
+weight = 1
+[[languages.en.menu.about]]
+identifier = 'mission'
+name = 'Mission'
+parent = 'about'
+url = '/en/about/mission'
+weight = 1
+[[languages.en.menu.about]]
+identifier = 'mivar-intelligent-systems'
+name = 'Our approach'
+parent = 'about'
+url = '/en/technologies/mivar-intelligent-systems'
+weight = 2
+[[languages.en.menu.about]]
+identifier = 'business-proposal'
+name = 'Services'
+parent = 'about'
+url = '/en/services/business-proposal'
+weight = 3
+[[languages.en.menu.about]]
+identifier = 'cookies'
+name = 'Cookies'
+parent = 'about'
+url = '/en/about/cookies'
+weight = 4
+[[languages.en.menu.contacts]]
+identifier = 'contacts'
+name = 'Contact info'
+weight = 1
+[[languages.en.menu.contacts]]
+identifier = 'info'
+name = 'General requests'
+parent = 'contacts'
+url = 'info@mivar.org'
+weight = 1
+[[languages.en.menu.contacts]]
+identifier = 'science'
+name = 'Science requests'
+parent = 'contacts'
+url = 'science@mivar.org'
+weight = 2

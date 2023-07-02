@@ -1,0 +1,38 @@
+﻿{{- $page := . }}
+
+{{- with index site.Menus.main }}
+<nav>
+  <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+    {{- partial "partials/inline/menu/main/walk.html" (dict "page" $page "menuEntries" .) }}
+  </ul>
+</nav>
+{{- end }}
+
+{{- define "partials/inline/menu/main/walk.html" }}
+{{- $page := .page }}
+{{- range .menuEntries }}
+{{- $linkattrs := dict "href" .URL }}
+{{- $liattrs := dict }}
+{{- if .HasChildren}}
+{{- $linkattrs = merge $linkattrs (dict "class" "nav-link" "data-toggle" "dropdown" "role" "button") }}
+{{- $liattrs = merge $liattrs (dict "class" "nav-item dropdown") }}
+{{- else if not .HasChildren }}
+{{- $linkattrs = merge $linkattrs (dict "class" "dropdown-item") }}
+{{- end }}
+<li {{- range $k, $v :=$liattrs }} {{- with $v }} {{- printf " %s=%q" $k $v | safeHTMLAttr }} {{- end }} {{- end -}}>
+  <a {{- range $k, $v :=$linkattrs }} {{- with $v }} {{- printf " %s=%q" $k $v | safeHTMLAttr }} {{- end }} {{- end -}}>
+    {{- if .HasChildren}}
+    <span class="nav-link-inner-text">{{ or (T .Identifier) .Name | safeHTML }}</span>
+    <i class="fas fa-angle-down nav-link-arrow ml-2"></i>
+    {{- else}}
+    {{ or (T .Identifier) .Name | safeHTML }}
+    {{- end }}
+  </a>
+  {{- with .Children }}
+  <ul class="dropdown-menu">
+    {{- partial "partials/inline/menu/main/walk.html" (dict "page" $page "menuEntries" .) }}
+  </ul>
+  {{- end }}
+</li>
+{{- end }}
+{{- end }}

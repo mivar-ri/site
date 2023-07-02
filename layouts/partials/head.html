@@ -1,0 +1,21 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="{{ .Description }}" />
+{{ block "meta" . }} {{ end }}
+<!-- Primary Meta Tags -->
+<title>{{ .Title }} - {{ .Site.Title }}</title>
+
+<!-- Favicon -->
+{{ with resources.Get "img/brand/brand.svg" }}
+<link rel="icon" href="{{ .RelPermalink }}" />
+{{ end }}
+
+<!-- Alternate -->
+{{ if .IsTranslated }}
+	{{ range .Translations }}
+	<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+	{{ end }}
+{{ end }}
+
+<!-- CSS -->
+{{ partial "head-css.html" . }}

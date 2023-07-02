@@ -1,0 +1,49 @@
+{{ $data := index site.Data.partners }}
+<div class="container mt-4">
+    <div class="mb-4 text-center">
+        <h2 class="mt-0">{{.Get `title`}}<h2>
+    </div>
+    <div id="{{.Get `id`}}" class="carousel slide w-100" data-ride="carousel">
+        <div class="carousel-inner w-100" role="listbox">
+            {{ range $index, $item := $data.carousel }}
+            <div class="carousel-item row no-gutters {{if eq $index 0}}active{{ end }}">
+                {{ range $item}}
+                <div class="col-6 float-left">
+                    <div class="text-center">
+                        <a href="{{ .url }}">
+                            {{ $image := resources.Get .img }}
+                            {{ $image := $image.Fit "240x240" }}
+                            <img src="{{ $image.RelPermalink }}" class="img-fluid"/>
+                        </a>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+        <div class=" d-none d-lg-block">
+            <a href="#{{.Get `id`}}" class="carousel-control-prev" role="button" data-slide="prev"
+                style="color: #242e4c; text-decoration: none">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a href="#{{.Get `id`}}" class="carousel-control-next" role="button" data-slide="next"
+                style="color: #242e4c; text-decoration: none">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="text-center d-lg-none">
+        <a class="mr-3" href="#{{.Get `id`}}" role="button" data-slide="prev"
+            style="color: #242e4c; text-decoration: none">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="ml-3" href="#{{.Get `id`}}" role="button" data-slide="next"
+            style="color: #242e4c; text-decoration: none">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>

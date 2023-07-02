@@ -1,0 +1,44 @@
+{
+  "carousel": [
+    {
+      "title": "Mivar Research Institute",
+      "displayTitle": "2",
+      "subtitle": "LOGICAL ARTIFICIAL INTELLIGENCE",
+      "content": "Innovator in the field of intelligent information technologies and artificial intelligence systems",
+      "buttonTitle": "Learn more",
+      "url": "/en/about/mission"
+    },
+    {
+      "title": "Next generation expert systems",
+      "displayTitle": "3",
+      "subtitle": "",
+      "content": "Mivar approach lays the foundation for unifying all existing and perspective developments in the field of intelligent expert systems",
+      "buttonTitle": "Learn more",
+      "url": "/en/activities/expert-systems"
+    },
+    {
+      "title": "Semantic analysis and text processing in natural language",
+      "displayTitle": "3",
+      "subtitle": "",
+      "content": "Application of mivar technologies allows us to overcome principal limitations of natural Russian language understanding",
+      "buttonTitle": "Learn more",
+      "url": "/en/activities/texts"
+    },
+    {
+      "title": "Intelligent robot management",
+      "displayTitle": "3",
+      "subtitle": "",
+      "content": "The mivar approach allows us to solve the problem of high-performance robot intellectualization without limitations concerning volume of knowledge base",
+      "buttonTitle": "Learn more",
+      "url": "/en/activities/robots"
+    },
+    {
+      "title": "Intelligent image recognition",
+      "displayTitle": "3",
+      "subtitle": "",
+      "content": "The mivar approach allows us to describe heterogeneous sets of graphical data in human terms",
+      "buttonTitle": "Learn more",
+      "url": "/en/activities/images"
+    }
+  ]
+}
