@@ -33,6 +33,7 @@ site:
     - npm install postcss postcss-cli autoprefixer
   script:
     - hugo
+    - cp public/ru/404.html public/404.html
   artifacts:
     paths:
       - public
