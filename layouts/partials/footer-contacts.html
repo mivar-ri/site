@@ -1,0 +1,18 @@
+{{- $page := . }}
+{{- with index site.Menus.contacts }}
+{{- partial "partials/inline/menu/contacts/walk.html" (dict "page" $page "menuEntries" .) }}
+{{- end }}
+
+{{- define "partials/inline/menu/contacts/walk.html" }}
+{{- $page := .page }}
+{{- range  $index, $item := .menuEntries }}
+{{- if $item.HasChildren}}
+<h5>{{$item.Name}}</h5>
+    {{- with $item.Children }}
+    {{- partial "partials/inline/menu/contacts/walk.html" (dict "page" $page "menuEntries" .) }}
+    {{- end }}
+{{- else }}
+<p>{{$item.Name}}<br> <u><a href="mailto:{{$item.URL}}">{{$item.URL}}</a></u></p>
+{{- end }}
+{{- end }}
+{{- end }}

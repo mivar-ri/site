@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{.Site.Language.Lang}}">
+<!--
+
+=========================================================
+* Pixel Lite Bootstrap UI Kit
+=========================================================
+
+* Product Page: https://themesberg.com/product/ui-kits/pixel-lite-free-bootstrap-4-ui-kit
+* Copyright 2019 Themesberg (https://www.themesberg.com)
+* License Themesberg (Crafty Dwarf LLC) (https://themesberg.com/licensing)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<body>
+  {{ partial "cookieconsent.html" . }}
+  <header class="header-global">{{ partial "header-global.html" . }}</header>
+  <main>
+    <!-- Hero -->
+    <section class="section-header pt-6 pb-0 bg-primary text-white">
+      <div id="header-page-particles-js" style="position: absolute; width: 100%; height: 100%" class="pb-6"> </div>
+      {{ block "hero" . }} {{ end }}
+    </section>
+    <!-- Main -->
+    {{ block "main" . }} {{ end }}
+  </main>
+  <footer class="footer pt-5 pb-5 bg-primary text-white">
+    {{ partial "footer.html" . }}
+  </footer>
+  {{ partial "bottom-scripts.html" . }}
+  {{ block "bottom-scripts" . }} {{ end }}
+</body>
+
+</html>

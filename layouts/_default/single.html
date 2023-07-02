@@ -1,0 +1,19 @@
+{{ define "hero" }} {{ partial "hero-single.html" . }} {{ end }}
+
+{{ define "title" }} {{ .Title }} &ndash; {{ .Site.Title }} {{ end }}
+
+{{ define "bottom-scripts" }}
+<script type="text/javascript">
+  particlesJS.load("header-page-particles-js", "/js/particles/particles.json");
+</script>
+{{ end }}
+
+{{ define "main" }}
+<section class="section section-sm">
+  <article class="container">
+    <section class="flow">
+      {{ .Content }}
+    </section>
+  </article>
+</section>
+{{ end }}

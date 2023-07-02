@@ -1,0 +1,5 @@
+<figure class="figure">
+    {{ $image := .Get `url` | resources.Get }}
+    <img src="{{ $image.RelPermalink }}" class="figure-img img-fluid rounded" alt="{{ .Get `alt` }}">
+    <figcaption class="figure-caption"></figcaption>
+</figure>

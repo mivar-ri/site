@@ -1,0 +1,62 @@
+<!-- Core -->
+<!-- Vendor JS -->
+
+{{ with resources.Get "js/particles/particles.js" | minify | fingerprint "sha512" }}
+<script src="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" type="text/javascript"></script>
+{{ end }}
+
+{{ with resources.Get "vendor/jquery/jquery.js" | minify | fingerprint "sha512" }}
+<script src="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" type="text/javascript"></script>
+{{ end }}
+
+{{ with resources.Get "vendor/popper.js/popper.js" | minify | fingerprint "sha512" }}
+<script src="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" type="text/javascript"></script>
+{{ end }}
+
+{{ with resources.Get "vendor/bootstrap/js/bootstrap.js" | minify | fingerprint "sha512" }}
+<script src="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" type="text/javascript"></script>
+{{ end }}
+
+{{ with resources.Get "vendor/headroom.js/headroom.js" | minify | fingerprint "sha512" }}
+<script src="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" type="text/javascript"></script>
+{{ end }}
+
+{{ with resources.Get "js/pixel/pixel.js" | minify | fingerprint "sha512" }}
+<script src="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" type="text/javascript"></script>
+{{ end }}
+
+{{ with resources.Get "vendor/onscreen/on-screen.umd.min.js" | fingerprint "sha512" }}
+<script src="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" type="text/javascript"></script>
+{{ end }}
+
+{{ with resources.Get "vendor/nouislider/nouislider.js" | minify | fingerprint "sha512" }}
+<script src="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" type="text/javascript"></script>
+{{ end }}
+
+{{ with resources.Get "vendor/bootstrap-datepicker/js/bootstrap-datepicker.js" | minify | fingerprint "sha512" }}
+<script src="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" type="text/javascript"></script>
+{{ end }}
+
+{{ with resources.Get "vendor/bootstrap-tagsinput/bootstrap-tagsinput.js" | minify | fingerprint "sha512" }}
+<script src="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" type="text/javascript"></script>
+{{ end }}
+
+{{ with resources.Get "vendor/waypoints/jquery.waypoints.js" | minify | fingerprint "sha512" }}
+<script src="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" type="text/javascript"></script>
+{{ end }}
+
+{{ with resources.Get "vendor/jarallax/jarallax.js" | minify | fingerprint "sha512" }}
+<script src="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" type="text/javascript"></script>
+{{ end }}
+
+{{ with resources.Get "vendor/smooth-scroll/smooth-scroll.polyfills.js" | minify | fingerprint "sha512" }}
+<script src="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" type="text/javascript"></script>
+{{ end }}
+
+{{ with resources.Get "vendor/vivus/dist/vivus.js" | minify | fingerprint "sha512" }}
+<script src="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" type="text/javascript"></script>
+{{ end }}
+
+{{ with resources.Get "vendor/vivus/src/pathformer.js" | minify | fingerprint "sha512" }}
+<script src="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" type="text/javascript"></script>
+{{ end }}

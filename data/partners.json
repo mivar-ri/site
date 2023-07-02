@@ -1,0 +1,24 @@
+{
+  "carousel": [
+    [
+      {
+        "img": "/media/partners/bmstu.png",
+        "url": "https://www.bmstu.ru/"
+      },
+      {
+        "img": "/media/partners/madi.png",
+        "url": "http://www.madi.ru/"
+      }
+    ],
+    [
+      {
+        "img": "/media/partners/npoconcept.png",
+        "url": "http://npoconcept.ru/"
+      },
+      {
+        "img": "/media/partners/balabza.png",
+        "url": "https://balabza.com/"
+      }
+    ]
+  ]
+}

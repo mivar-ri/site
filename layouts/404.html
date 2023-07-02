@@ -1,0 +1,22 @@
+{{ define "hero" }} {{ partial "hero-main.html" . }} {{ end }}
+
+{{ define "title" }} 404 - Page Not Found &ndash; {{ .Site.Title }} {{ end }}
+
+{{ define "bottom-scripts" }}
+<script type="text/javascript">
+    particlesJS.load("header-page-particles-js", "/js/particles/particles.json");
+</script>
+{{ end }}
+
+{{ define "main" }}
+<section class="section section-sm">
+    <article class="container">
+        <section class="flow">
+            <h1>Page Not Found</h1>
+            {{ with resources.Get "img/robots-404.jpg" }}
+            <img src="{{ .RelPermalink }}" class="rounded mx-auto d-block">
+            {{ end }}
+        </section>
+    </article>
+</section>
+{{ end }}
