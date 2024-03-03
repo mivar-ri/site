@@ -2,6 +2,6 @@
 
 Based on [hugo](https://gohugo.io/).
 
-See more: https://mivar.org/.
+See more details on [mivar.org](https://mivar.org/).
 
-Developed by @anondigriz.
+Developed by [@anondigriz](https://github.com/anondigriz).
