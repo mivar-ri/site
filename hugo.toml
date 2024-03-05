@@ -2,7 +2,7 @@ baseURL = 'https://mivar.org/'
 defaultContentLanguage = 'ru'
 defaultContentLanguageInSubdir = true
 assetDir = 'static'
-enableRobotsTXT = true
+enableRobotsTXT = false
 
 [sitemap]
 changefreq = 'weekly'
